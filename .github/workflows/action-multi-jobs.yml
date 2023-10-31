@@ -1,0 +1,36 @@
+name: action-menu
+run-name: ${{ github.actor }} action-menu
+#on: [push] Spusti se vzdy pri commitu kamkoliv
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+          - info
+          - warning
+          - debug
+
+jobs:
+  my_first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run My first job
+        run: echo My first job
+
+  my_second_job:
+    name: My second job
+    runs-on: ubuntu-latest    
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run My second job
+        run: My second job   
