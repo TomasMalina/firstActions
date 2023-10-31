@@ -1,5 +1,5 @@
 name: action-menu
-run-name: ${{ github.actor }} action-menu
+run-name: ${{ github.actor }} action-menu ${{inputs.environment}}
 #on: [push] Spusti se vzdy pri commitu kamkoliv
 on:
   workflow_dispatch:
