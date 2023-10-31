@@ -33,4 +33,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run My second job
-        run: My second job   
+        run: echo My second job 
