@@ -38,3 +38,14 @@ jobs:
     steps:
       - name: Print the input tag to STDOUT
         run: echo  The tags are ${{ inputs.tags }} 
+
+      - name: Display the path
+        shell: bash
+        run: echo $PATH > path.txt
+      #save Artifact
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: code-coverage-report
+          path: path.txt 
+          retention-days: 5      
