@@ -1,5 +1,5 @@
 name: action-menu
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} action-menu
 #on: [push] Spusti se vzdy pri commitu kamkoliv
 on:
   workflow_dispatch:

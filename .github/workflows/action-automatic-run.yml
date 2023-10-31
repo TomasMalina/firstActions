@@ -1,5 +1,5 @@
 name: action-automatic-run
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} automatic run
 #on: [push] Spusti se vzdy pri commitu kamkoliv
 on: #Spusti se pouze pri commitu do mastaeru
   push:
