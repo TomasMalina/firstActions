@@ -23,8 +23,13 @@ on:
         type: string
       environment:
         description: 'Environment to run tests against'
-        type: environment
+        type:  choice
         required: true
+        options:
+          - dev
+          - stage
+          - prod
+
 
 jobs:
   print-tag:
