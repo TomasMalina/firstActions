@@ -18,6 +18,7 @@ on:
         
 jobs:
   test:
-    runs-on: [self-hosted, "${{ inputs.chosen-os }}"]
+    #runs-on: [self-hosted, "${{ inputs.chosen-os }}"] self hosted - nastaveni labelu
+    runs-on: ${{ inputs.chosen-os }}"   
     steps:
     - run: echo Hello world!            
