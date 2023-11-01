@@ -1,5 +1,5 @@
 name: Choose runner
-run-name: Chose runner
+run-name: Chose runner ${{ inputs.chosen-os }}
 
 on:
   workflow_dispatch:
