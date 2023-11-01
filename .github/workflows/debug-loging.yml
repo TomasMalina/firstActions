@@ -1,5 +1,5 @@
 name: Debug
-run-name: Debug loging
+run-name: Debug loging ${{inputs.debug_mode}}
 
 on:
   workflow_dispatch:
