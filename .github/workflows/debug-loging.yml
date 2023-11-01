@@ -1,0 +1,19 @@
+name: Debug
+run-name: Debug loging
+
+on:
+  workflow_dispatch:
+    inputs:
+      debug_mode:
+        description: 'On/of debug mode'
+        required: false
+        type: boolean        
+
+env:
+    ACTIONS_RUNNER_DEBUG: ${{inputs.debug_mode}}          
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo Debug mode 
