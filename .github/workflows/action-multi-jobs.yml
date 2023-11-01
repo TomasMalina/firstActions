@@ -34,3 +34,15 @@ jobs:
 
       - name: Run My second job
         run: echo My second job 
+     
+  my_third_job:
+    name: My third job
+    needs: [my_first_job, my_second_job] #Definice závisloti
+    runs-on: ubuntu-latest    
+      
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Run My thirt job
+        run: echo My thirt job 
+                   
